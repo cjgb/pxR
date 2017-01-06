@@ -1,4 +1,6 @@
-## PC-Axis and the pxR package
+# PC-Axis and the pxR package
+
+[![Build Status](https://travis-ci.org/cjgb/pxR.svg?branch=master)](https://travis-ci.org/cjgb/pxR)
 
 [PC-Axis](http://www.scb.se/Pages/StandardNoLeftMeny____314045.aspx) is a software family consisting of a number of programs for the Windows and Internet environment used to present statistical information. It is used by national and international institutions to publish statistical data.
 
