@@ -1,0 +1,26 @@
+CHARSET="ANSI";
+AXIS-VERSION="2000";
+CREATION-DATE="20081223 00:00";
+DECIMALS=0;
+SHOWDECIMALS=0;
+MATRIX="example2";
+SUBJECT-CODE="01";
+SUBJECT-AREA="unknown";
+TITLE="unknown contents by B, C and A";
+CONTENTS="unknown contents";
+UNITS="things";
+STUB="B","C";
+HEADING="A";
+VALUES("B")="B1","B2","B3";
+VALUES("C")="C1","C2";
+VALUES("A")="A1","A2","A3","A4";
+CODES("C")="001","002";
+SOURCE="publics";
+LAST.UPDATED="20110728";
+DATA=
+1 2 3 4
+5 6 7 8
+9 10 11 12
+13 14 15 16
+17 18 19 20
+21 22 23 24;

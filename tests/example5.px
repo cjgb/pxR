@@ -1,0 +1,40 @@
+CHARSET="ANSI";
+AXIS-VERSION="2006";
+CREATION-DATE="20130529 12:26";
+DECIMALS=15;
+SHOWDECIMALS=3;
+MATRIX="demo_mlexpecedu";
+SUBJECT-CODE="demo_mlexpecedu";
+SUBJECT-AREA="Life expectancy by age, sex and educational attainment (ISCED 1997)";
+COPYRIGHT=NO;
+TITLE="Life expectancy by age, sex and educational attainment (ISCED 1997) M=Males by TIME, GEO, AGE and ISCED97";
+CONTENTS="Life expectancy by age, sex and educational attainment (ISCED 1997) M=Males";
+UNITS="NOT_REPORTED";
+STUB="TIME","GEO";
+HEADING="AGE","ISCED97";
+VALUES("TIME")="2007","2010";
+VALUES("GEO")="Bulgaria","Italy","Finland","Sweden";
+VALUES("AGE")="30 years","65 years","80 years";
+VALUES("ISCED97")="Pre-primary, primary and lower secondary education (levels 0-2)",
+"Upper secondary and post-secondary non-tertiary education (levels 3 and 4)",
+"First and second stage of tertiary education (levels 5 and 6)";
+CODES("TIME")="2007","2010";
+CODES("GEO")="BG","IT","FI","SE";
+CODES("AGE")="Y30","Y65","Y80";
+CODES("ISCED97")="ED0-2","ED3_4","ED5_6";
+DOMAIN("TIME")="TIME";
+DOMAIN("GEO")="GEO";
+DOMAIN("AGE")="AGE";
+DOMAIN("ISCED97")="ISCED97";
+LAST-UPDATED="20120609 02:15";
+SOURCE="Eurostat";
+KEYS("TIME")=CODES;
+KEYS("GEO")=CODES;
+DATA=
+"2007","BG", 33.97 44.08 47.16 12.35 14.06 15.01 5.88 5.88 5.88
+"2007","IT", 47.97 52.88 53.1 17.59 19.59 19.55 8.0399 8.039 8.039
+"2007","FI", 44.27 47.02 50.25 16.69 17.06 18.03 7.69 7.69 7.69
+"2007","SE", 48.08 49.93 51.86 17.57 18.01 18.72 7.8 7.8 7.8
+"2010","BG", 34.89 44.67 47.55 12.29 14.71 15.81 6.05 6.05 6.05
+"2010","FI", 45.26 47.65 51.01 17.07 17.4 18.53 7.92 7.92 7.92
+"2010","SE", 48.38 50.46 52.3 17.89 18.38 19.01 8.02 8.02 8.02;
