@@ -8,7 +8,7 @@ This function reads a PC-AXIS file (a text file with certain format) and creates
 }
 \usage{
 read.px(filename, encoding = NULL, 
-        na.strings = c('"."', '".."', '"..."', '"...."', '":"'))
+        na.strings = c('"."', '".."', '"..."', '"...."', '"....."', '"......"', '":"'))
 }
 
 \arguments{
@@ -23,7 +23,7 @@ read.px(filename, encoding = NULL,
 This function reads data files in the PC-Axis format.
 The format is described in the two documents in the reference section.
 
-According to them, null values can be encoded using ".", "..", "...", or "....". 
+According to them, null values can be encoded using ".", "..", "...", "....", "....." or "......". 
 
 Also, the documentation is not very specific concerning the actual encoding to be expected in
 PC-Axis files.
