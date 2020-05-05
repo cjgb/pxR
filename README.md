@@ -14,8 +14,8 @@ The single most important piece of infomation within a `px`object is the data ma
 For instance,
 
 ```
-my.px.object <- read.px( "/path/to/pc-axis/file" )
-my.px.data   <-  as.data.frame( my.px.object ) 
+my.px.object <- read.px("/path/to/pc-axis/file")
+my.px.data   <-  as.data.frame(my.px.object) 
 ```
 
 will create the data.frame `my.px.data` with the data in the corresponding PC-Axis file.
