@@ -19,18 +19,17 @@ This function extracts the data component from a px object as a \code{array}.
 }
 \value{An array}
 \references{
-http://www.scb.se/upload/PC-Axis/Support/Documents/PC-Axis_fileformat.pdf
+https://www.scb.se/globalassets/vara-tjanster/px-programmen/px-file_format_specification_2013.pdf
 }
 \seealso{
   \code{\link{read.px}},
   \code{\link{as.data.frame.px}}
 }
 \examples{
-my.px     <- read.px( system.file( "extdata", "example.px", package = "pxR"))
-my.array  <- as.array( my.px )
-my.array2  <- as.array( my.px ,use.codes=TRUE)
-my.array3  <- as.array( my.px ,use.codes=c('municipios'))
+my.px     <- read.px(system.file("extdata", "example.px", package = "pxR"))
+my.array  <- as.array(my.px)
+my.array2  <- as.array(my.px ,use.codes=TRUE)
+my.array3  <- as.array(my.px ,use.codes=c('municipios'))
 }
 \author{Francisco J. Viciana}
 \keyword{manip}
-

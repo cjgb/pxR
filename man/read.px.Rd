@@ -7,7 +7,7 @@ Reads a PC-Axis file
 This function reads a PC-AXIS file (a text file with certain format) and creates an object of the class px.
 }
 \usage{
-read.px(filename, encoding = NULL, 
+read.px(filename, encoding = NULL,
         na.strings = c('"."', '".."', '"..."', '"...."', '":"'))
 }
 
@@ -23,7 +23,7 @@ read.px(filename, encoding = NULL,
 This function reads data files in the PC-Axis format.
 The format is described in the two documents in the reference section.
 
-According to them, null values can be encoded using ".", "..", "...", or "....". 
+According to them, null values can be encoded using ".", "..", "...", or "....".
 
 Also, the documentation is not very specific concerning the actual encoding to be expected in
 PC-Axis files.
@@ -35,7 +35,7 @@ An object of the class \code{px}, which is essentially a list comprising the
 fields of a PC-AXIS file (see references for details).
 }
 \references{
-  \url{http://www.scb.se/upload/PC-Axis/Support/Documents/PC-Axis_fileformat.pdf}
+  \url{https://www.scb.se/globalassets/vara-tjanster/px-programmen/px-file_format_specification_2013.pdf}
   \url{http://tilastokeskus.fi/tup/pcaxis/tiedostomuoto2006_laaja_en.pdf}
 }
 \author{
@@ -53,7 +53,7 @@ Carlos J. Gil Bellosta, Oscar Perpiñan Lamigueiro, Francisco J. Viciana Fernán
 
 my.px.object <- read.px(system.file("extdata", "example.px",
                         package = "pxR") )
-my.px.data   <-  as.data.frame( my.px.object ) 
+my.px.data   <-  as.data.frame( my.px.object )
 
 }
 

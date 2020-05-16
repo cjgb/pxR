@@ -1,12 +1,12 @@
 Package: pxR
 Type: Package
 Title: PC-Axis with R
-Version: 0.42.2
-Date: 2017-01-12
+Version: 0.42.3
+Date: 2020-05-05
 Encoding: UTF-8
-Authors@R: c(person("Carlos J.", "Gil Bellosta", email="cgb@datanalytics.com", role=c('cre', 'aut')), 
-             person("Francisco J.",  "Viciana", email= "franciscoj.viciana@juntadeandalucia.es", role='aut'), 
-             person("Oscar", "Perpinan Lamigueiro", email="oscar.perpinan@upm.es", role='aut'), 
+Authors@R: c(person("Carlos J.", "Gil Bellosta", email="cgb@datanalytics.com", role=c('cre', 'aut')),
+             person("Francisco J.",  "Viciana", email= "franciscoj.viciana@juntadeandalucia.es", role='aut'),
+             person("Oscar", "Perpinan Lamigueiro", email="oscar.perpinan@upm.es", role='aut'),
              person("Emilio", "Torres Manzanera", email="torres@uniovi.es", role='ctb'))
 Description: Provides a set of functions for reading and writing PC-Axis files, used by different statistical organizations around the globe for data dissemination.
 Depends: stringr, reshape2, RJSONIO, plyr

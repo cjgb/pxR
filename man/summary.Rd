@@ -23,7 +23,7 @@ A verbose description of data and metadata within the px object.
 }
 
 \references{
-http://www.scb.se/upload/PC-Axis/Support/Documents/PC-Axis_fileformat.pdf
+https://www.scb.se/globalassets/vara-tjanster/px-programmen/px-file_format_specification_2013.pdf
 }
 
 \author{
@@ -38,7 +38,7 @@ Carlos J. Gil Bellosta
   \code{\link{as.data.frame.px}}
 }
 \examples{
-my.px.object <- read.px( system.file( "extdata", "example.px", package = "pxR") )
-summary( my.px.object )
+my.px.object <- read.px(system.file( "extdata", "example.px", package = "pxR"))
+summary(my.px.object)
 }
 \keyword{ manip }

@@ -29,7 +29,7 @@ This function extracts the data component from a px object as a \code{data.frame
     The the \code{use.codes} parameter can be used to select those variables for which the CODES attribute in the PC-Axis file for naming the levels of the variables.
     It should be noted that there may not be CODES for all variables; in such cases, the VALUES are used instead.
 
-    The function will operate in 'paranoid mode' unless \code{warnings.as.errors} is set to \code{FALSE}. 
+    The function will operate in 'paranoid mode' unless \code{warnings.as.errors} is set to \code{FALSE}.
     In such mode, the function will fail if any issues are found in the data.
     If \code{warnings.as.errors} is set to \code{FALSE}, the function will do its best to solve some known issues in some PC-Axis files.
 }
@@ -37,7 +37,7 @@ This function extracts the data component from a px object as a \code{data.frame
 A data.frame object.
 }
 \references{
-http://www.scb.se/upload/PC-Axis/Support/Documents/PC-Axis_fileformat.pdf
+https://www.scb.se/globalassets/vara-tjanster/px-programmen/px-file_format_specification_2013.pdf
 }
 \author{
 Carlos J. Gil Bellosta, Oscar Perpiñán Lamigueiro, Francisco J. Viciana
@@ -53,7 +53,7 @@ Fernández, Emilio Torres
   }
 
 \examples{
-my.px.object <- read.px(system.file( "extdata", "example.px",
+my.px.object <- read.px(system.file("extdata", "example.px",
                                               package = "pxR"))
 my.px.data   <- as.data.frame(my.px.object)
 }
