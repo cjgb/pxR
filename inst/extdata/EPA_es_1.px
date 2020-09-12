@@ -2,23 +2,23 @@ SUBJECT-AREA="Las tablas que incluyen entre sus variables sectores/ramas de acti
 SUBJECT-CODE="01";
 CHARSET="ANSI";
 MATRIX="EPA_es_1.px";
-TITLE="Población de 16 y más años por relación con la actividad económica, sexo y grupo de edad";
+TITLE="Poblacion de 16 y mas anos por relacion con la actividad economica, sexo y grupo de edad";
 LANGUAGE="ES";
-CONTENTS="Población de 16 y más años";
+CONTENTS="Poblacion de 16 y mas anos";
 UNITS="Miles de personas";
 STUB="Sexo","Edad";
-HEADING="Relación con la actividad económica","Periodo";
+HEADING="Relacion con la actividad economica","Periodo";
 VALUES("Sexo")=
 "Ambos sexos",
 "Varones",
 "Mujeres";
 VALUES("Edad")=
 "Total",
-"De 16 a 19 años",
-"De 20 a 24 años",
-"De 25 a 54 años",
-"De 55 y más años";
-VALUES("Relación con la actividad económica")=
+"De 16 a 19 anos",
+"De 20 a 24 anos",
+"De 25 a 54 anos",
+"De 55 y mas anos";
+VALUES("Relacion con la actividad economica")=
 "Total",
 "Activos",
 "Ocupados",
@@ -54,8 +54,8 @@ VALUES("Periodo")=
 "2011TII";
 DECIMALS=1;
 SHOWDECIMALS=1;
-SOURCE="Instituto Nacional de Estadística";
-CONTACT="INE Difusión e-mail: http://www.ine.es/infoine; internet: www.ine.es; tel:+34 91 583 9100";
+SOURCE="Instituto Nacional de Estadistica";
+CONTACT="INE Difusion e-mail: http://www.ine.es/infoine; internet: www.ine.es; tel:+34 91 583 9100";
 COPYRIGHT=YES;
 DATA=
 36187.6 36334.6 36489.6 36652.1 36800.3 36931.2 37064.8 37235.5 37428.8 37591.9 37733.9 37896.9 38042.7 38161.5 38270.7 38356.5 38408.6 38432 38442.5 38443.2 38450.8 38467.8 38485.4 38512.4 38512 38481.2 20591.7 20839.6 20956.1 21155.5 21335.9 21530.1 21660.7 21812.4 21925.3 22127.3 22302.5 22404.5 22576.5 22806.7 22945.1 23064.7 23101.5 23082.4 22993.5 22972.5 23006.9 23122.3 23121.5 23104.8 23061.8 
