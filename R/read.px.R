@@ -46,8 +46,8 @@ read.px <- function(filename, encoding = NULL,
     }
 
     break.clean <- function(x) {
-        x <- clean.spaces( strsplit(x, split = '\\"')[[1]] )    ## breaks by '"'
-        x[! x %in% c("," , "")]                                 ## and drops spurious seps
+        x <- clean.spaces( strsplit(x, split = '\", ?\"')[[1]] )    ## breaks by \", \" (with or without space)
+
     }
 
 
