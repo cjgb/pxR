@@ -66,7 +66,7 @@ read.px <- function(filename, encoding = NULL,
     # modification by  fvf: 130608 
     a <- paste(a, collapse = "\n")        # Se mantienen "CR/LF luego se quitaran selectivamente
 
-    tmp <- strsplit( a, "DATA=" )[[1]]
+    tmp <- str_split( a, "DATA=" )[[1]]
     tmp[1] <- gsub("\n", " ", tmp[1])     # fvf[130608]: elimina CR de la cabecera
     tmp[2] <- gsub(";", "", tmp[2])       # fvf[150212] (la modificacion rev 92 a 94) da multiples problemas en INEBase                                          
                                           # i.e: read.px('http://www.ine.es/pcaxisdl//t20/e245/p05/a2002/l0/00004001.px')
