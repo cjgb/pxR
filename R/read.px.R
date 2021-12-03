@@ -31,7 +31,14 @@
 #################################################################
 
 read.px <- function(filename, encoding = NULL, 
-                    na.strings = c('"."', '".."', '"..."', '"...."', '"....."', '"......"', '":"')) {
+                    na.strings = c('"."', '".."', '"..."', '"...."', '"....."', '"......"', '":"'),
+                    text) {
+
+    if (missing(filename) && !missing(text)) {
+        filename <- textConnection(text, encoding = "UTF-8")
+        encoding <- "UTF-8"
+        on.exit(close(filename))
+    }
 
     ## auxiliary functions ##
 
@@ -61,7 +68,7 @@ read.px <- function(filename, encoding = NULL,
                            "latin1", "CP437")  # comprobado en debian y osx
     }
 
-    a <- scan(filename, what = "character", sep = "\n", quiet = TRUE, fileEncoding = encoding)
+    a <- scan(filename, what = "character", sep = "\n", quiet = TRUE, encoding = encoding, fileEncoding = encoding)
 
     # modification by  fvf: 130608 
     a <- paste(a, collapse = "\n")        # Se mantienen "CR/LF luego se quitaran selectivamente
