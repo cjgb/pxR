@@ -28,6 +28,9 @@
 #                               i.e: read.px('http://www.ine.es/pcaxisdl//t20/e245/p05/a2002/l0/00004001.px')
 #               20150216. fvf   minor correction of a bug in the modification: 20150211,fvf
 #               20150219. fvf   Solving a bug: a missing "DROP=FALSE" was producing a read error on files with a single key
+#               20220728. fvf   Change strsplit by str-split in "strsplit( a, "DATA=" )[[1]]" 
+#                               Remove Error in : "C stack usage is too close to the limit"
+#                               
 #################################################################
 
 read.px <- function(filename, encoding = NULL, 
@@ -66,7 +69,7 @@ read.px <- function(filename, encoding = NULL,
     # modification by  fvf: 130608 
     a <- paste(a, collapse = "\n")        # Se mantienen "CR/LF luego se quitaran selectivamente
 
-    tmp <- strsplit( a, "DATA=" )[[1]]
+    tmp <- str_split( a, "DATA=" )[[1]]   # fvf[280622]: change strsplit by str-split. remove Error: "C stack usage is too close to the limit"
     tmp[1] <- gsub("\n", " ", tmp[1])     # fvf[130608]: elimina CR de la cabecera
     tmp[2] <- gsub(";", "", tmp[2])       # fvf[150212] (la modificacion rev 92 a 94) da multiples problemas en INEBase                                          
                                           # i.e: read.px('http://www.ine.es/pcaxisdl//t20/e245/p05/a2002/l0/00004001.px')
