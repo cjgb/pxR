@@ -1,7 +1,7 @@
 Package: pxR
 Type: Package
 Title: PC-Axis with R
-Version: 0.42.6
+Version: 0.42.7
 Date: 2022-11-20
 Encoding: UTF-8
 Authors@R: c(person("Carlos J.", "Gil Bellosta", email="cgb@datanalytics.com", role=c('cre', 'aut')),
