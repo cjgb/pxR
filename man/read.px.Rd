@@ -37,7 +37,7 @@ fields of a PC-AXIS file (see references for details).
 }
 \references{
   \url{https://www.scb.se/globalassets/vara-tjanster/px-programmen/px-file_format_specification_2013.pdf}
-  \url{http://tilastokeskus.fi/tup/pcaxis/tiedostomuoto2006_laaja_en.pdf}
+  \url{https://tilastokeskus.fi/tup/pcaxis/tiedostomuoto2006_laaja_en.pdf}
 }
 \author{
 Carlos J. Gil Bellosta, Oscar Perpiñan Lamigueiro, Francisco J. Viciana Fernández

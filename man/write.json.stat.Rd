@@ -16,7 +16,7 @@ write.json.stat(obj.px, filename)
 }
 
 \references{
-  \url{http://json-stat.org/}
+  \url{https://json-stat.org/}
 }
 \author{
   Carlos J. Gil Bellosta
@@ -27,7 +27,7 @@ write.json.stat(obj.px, filename)
 }
 \examples{
 \dontrun{
-  opx1 <- read.px(system.file( "extdata", "example.px", package = "pxR"))  
+  opx1 <- read.px(system.file( "extdata", "example.px", package = "pxR"))
   write.json.stat(opx1, file = "opx.px")
 }
 }
