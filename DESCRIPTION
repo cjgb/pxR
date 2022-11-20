@@ -13,4 +13,4 @@ Depends: stringr, reshape2, RJSONIO, plyr
 URL: https://github.com/cjgb/pxR
 License: GPL-3
 LazyLoad: yes
-LazyData: yes
+LazyData: no
