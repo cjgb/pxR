@@ -14,6 +14,7 @@
 #    20240311. munoztd0: updated the handling of 'to_values' in the mapvalues function for language translation
 #################################################################
 
+#' @export
 as.data.frame.px <- function( x, ..., use.codes = FALSE, warnings.as.errors = TRUE, direction = "long", language=FALSE){
   
   dat <- x$DATA$value  # already a data frame
