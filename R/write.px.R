@@ -17,6 +17,8 @@
 #               fvf,  20141222: Allows use of "KEYS" for the export of sparse matrices.
 #                               Use CODES values, if any, to identify rows.
 #                               Fixed a bug related to iconv
+#               eth,  20230301: Added TIMEVAL keyword in same if-statement as ELIMINATION
+#                               as it has to be defined in a specific way, when writing the file
 #################################################################
 
 
@@ -169,7 +171,7 @@ write.px <- function ( obj.px, filename, heading = NULL, stub = NULL,
       # for some keys, it uses quotes; for others (YES/NO), it does not.
       # KEYS is another exception: the argument is not quoted
             
-      if ( (key =='ELIMINATION' && obj.px[[key]][[subkey]] %in% c('YES','NO')) || key == 'KEYS' )
+      if ( (key =='ELIMINATION' && obj.px[[key]][[subkey]] %in% c('YES','NO')) || key == 'KEYS' | key == "TIMEVAL")
           wf(obj.px[[key]][[subkey]]) 
         else
           wf(paste(requote(obj.px[[key]][[subkey]]), collapse = ',')) 
