@@ -73,7 +73,7 @@ write.px <- function ( obj.px, filename, heading = NULL, stub = NULL,
   # CREATION-DATE:
   
   if  ( is.null(obj.px$'CREATION-DATE')  | is.null(obj.px$'CREATION.DATE') ) {
-    obj.px$'CREATION-DATE'$value <- format(Sys.time(),'%Y%m%d %H:%m')
+    obj.px$'CREATION-DATE'$value <- format(Sys.time(),'%Y%m%d %H:%M')
   }
   
   
