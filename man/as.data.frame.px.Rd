@@ -10,7 +10,7 @@ This function extracts the data component from a px object as a \code{data.frame
 }
 \usage{
 \S3method{as.data.frame}{px}( x, ..., use.codes = FALSE,
-                 warnings.as.errors = TRUE, direction = 'long')
+                 warnings.as.errors = TRUE, direction = 'long', language=FALSE)
 }
 \arguments{
   \item{x}{ a px object }
@@ -22,6 +22,7 @@ This function extracts the data component from a px object as a \code{data.frame
   \item{warnings.as.errors}{ If true, the function will fail in case any issues are found; otherwise, it will generate warnings. }
   \item{direction}{character string, either ‘"wide"’ to reshape to wide format,
           or ‘"long"’ to reshape to long format (default).}
+  \item{language}{ a logical indicating whether to use language-specific values. Default is FALSE.}
   \item{...}{ Additional arguments, currently not used }
 }
 \details{
