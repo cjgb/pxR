@@ -5,7 +5,7 @@ importFrom("stringr", str_split, str_locate_all, str_sub, str_length)
 importFrom("plyr", mapvalues, ldply)
 importFrom("stats", "formula", "ftable")
 importFrom("utils", "read.table", "str")
-importFrom("RJSONIO", "toJSON")
+importFrom("jsonlite", "write_json")
 
 
 export(read.px)
